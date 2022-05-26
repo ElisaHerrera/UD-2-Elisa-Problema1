@@ -20,11 +20,12 @@ public class SuperList extends ListManager<Integer>{
     @Override
     public void showElements() {
         Iterator<Integer> it = list.iterator();
-
+        while (it.hasNext()) {
+            System.out.println(it.next());
     }
 
     @Override
     public void showReversedElements() {
-
+            Collections.reverse(list);
     }
 }
